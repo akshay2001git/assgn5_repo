@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Branch - Assignment 5</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    /* Moving text */
+    .moving-text {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 28px;
+        font-weight: bold;
+        top: 40%;
+        animation: moveText 10s linear infinite;
+    }
+
+    @keyframes moveText {
+        from { left: 100%; }
+        to { left: -100%; }
+    }
+
+    /* Fade animation */
+    .fade {
+        margin-top: 80px;
+        font-size: 40px;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Typing effect */
+    .typing {
+        font-size: 24px;
+        border-right: 3px solid white;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 20px auto;
+        animation: typing 4s steps(30, end) forwards, blink 0.8s infinite;
+    }
+
+    @keyframes typing {
+        to { width: 320px; }
+    }
+
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+
+    /* Button styling */
+    .btn {
+        margin-top: 30px;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        background: #ff7b00;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ff5100;
+        transform: scale(1.1);
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1 class="fade">Master Branch</h1>
+
+<div class="moving-text">🚀 This Is Master Branch for Assignment 5 🚀</div>
+
+<div class="typing">Welcome to Master Branch...</div>
+
+<button class="btn" onclick="showMessage()">Click Me</button>
+
+<script>
+function showMessage() {
+    alert("Hello from Master Branch!");
+}
+</script>
+
+</body>
+</html>
